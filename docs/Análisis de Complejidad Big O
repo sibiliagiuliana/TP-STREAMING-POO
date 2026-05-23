@@ -40,7 +40,3 @@ Debido a que se genera una nueva lista con las canciones seleccionadas.
 # Ejecución Concurrente
 Se realizaron múltiples solicitudes simultáneas al endpoint:
 POST /api/canciones/{id}/reproducir para verificar el correcto incremento concurrente del contador de reproducciones.
-
-Las capturas de pantalla se encuentran en:
-
-docs/requests-de-prueba/

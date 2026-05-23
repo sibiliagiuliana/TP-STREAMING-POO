@@ -1,0 +1,46 @@
+# Búsqueda Binaria Implementada
+
+La búsqueda binaria fue implementada para realizar búsquedas eficientes sobre una colección ordenada de canciones.
+
+## Funcionamiento
+El algoritmo divide repetidamente el arreglo o lista ordenada en dos partes y compara el elemento central con el valor buscado.
+- Si el elemento buscado es menor, continúa en la mitad izquierda.
+- Si es mayor, continúa en la mitad derecha.
+- Si coincide, devuelve el resultado.
+
+## Complejidad Temporal
+La complejidad temporal de la búsqueda binaria es: O(log n)
+Esto ocurre porque en cada iteración el espacio de búsqueda se reduce a la mitad.
+
+## Complejidad Espacial O(1)
+Ya que únicamente se utilizan variables auxiliares constantes.
+---
+
+# Algoritmo de Playlist Automática
+
+El algoritmo de playlist automática genera una lista de reproducción recorriendo la colección de canciones disponibles y aplicando criterios de selección.
+
+## Funcionamiento
+El algoritmo:
+1. Recorre la lista de canciones.
+2. Filtra canciones según ciertos criterios (género, artista, popularidad, etc.).
+3. Agrega las canciones seleccionadas a la playlist automática.
+
+## Complejidad Temporal
+La complejidad temporal es: O(n)
+Donde:
+- n representa la cantidad de canciones de la colección.
+Esto ocurre porque el algoritmo necesita recorrer todas las canciones al menos una vez.
+
+## Complejidad Espacial O(n)
+Debido a que se genera una nueva lista con las canciones seleccionadas.
+
+---
+
+# Ejecución Concurrente
+Se realizaron múltiples solicitudes simultáneas al endpoint:
+POST /api/canciones/{id}/reproducir para verificar el correcto incremento concurrente del contador de reproducciones.
+
+Las capturas de pantalla se encuentran en:
+
+docs/requests-de-prueba/
